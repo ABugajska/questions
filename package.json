@@ -1,0 +1,40 @@
+{
+  "name": "lets-run",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony index.js",
+    "preinstall": "npm i -g bower gulp gulp-cli",
+    "postinstall": "bower install && gulp build",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kucharskimaciej/lets-run.git"
+  },
+  "author": "Maciej Kucharski, Agnieszka Bugajska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kucharskimaciej/lets-run/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-haml": "^0.1.6",
+    "gulp-ng-html2js": "^0.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-ruby-haml": "0.0.9",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.6",
+    "main-bower-files": "^2.13.1"
+  }
+}
