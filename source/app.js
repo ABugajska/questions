@@ -1,5 +1,6 @@
 (function(){
-  angular.module('app', ['templates', 'questions', 'ui.router'])
+  'use strict';
+  angular.module('app', ['templates', 'questions', 'ui.router', 'questionsList'])
 
   .config(function($stateProvider, $urlRouterProvider, $locationProvider){
     $locationProvider.html5Mode(true);
@@ -7,7 +8,8 @@
 
     $stateProvider.state('questions', {
       url: '/',
-      templateUrl: 'pages/list/view.html'
+      templateUrl: 'pages/list/view.html',
+      controller: 'QuestionsListCtrl as ctrl'
     })
   });
 })();
