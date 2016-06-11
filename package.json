@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kucharskimaciej/lets-run.git"
+    "url": "git+https://git@github.com/ABugajska/questions.git"
   },
-  "author": "Maciej Kucharski, Agnieszka Bugajska",
+  "author": "Agnieszka Bugajska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kucharskimaciej/lets-run/issues"
+    "url": "https://git@github.com/ABugajska/questions.git/issues"
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,14 +1,13 @@
 (function(){
-  angular.module('app', ['templates', 'participants', 'ui.router','participantsList'])
+  angular.module('app', ['templates', 'questions', 'ui.router'])
 
   .config(function($stateProvider, $urlRouterProvider, $locationProvider){
     $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/home');
 
-    $stateProvider.state('participants', {
+    $stateProvider.state('questions', {
       url: '/',
-      templateUrl: 'page/template.html'
+      templateUrl: 'pages/list/view.html'
     })
-
   });
 })();
