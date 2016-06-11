@@ -17,8 +17,20 @@ try {
   module = angular.module('templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('components/list/view.html',
+    '<ul><li ng-repeat="question in $ctrl.questions"><span>{{question.title}}</span></li></ul>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('templates');
+} catch (e) {
+  module = angular.module('templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('pages/list/view.html',
-    '<p>hello world</p>');
+    '<list-component questions="ctrl.questions"></list-component>');
 }]);
 })();
 
