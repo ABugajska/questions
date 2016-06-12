@@ -17,7 +17,7 @@ gulp.task('watch', () => {
         gulp.start('build:templates');
     });
 
-    watch(paths.styles, function () {
+    watch([paths.style, paths.styles], function () {
         gulp.start('build:css');
     });
 });

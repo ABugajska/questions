@@ -49,7 +49,7 @@ const buildApp = () =>
         .pipe(gulp.dest(paths.build));
 
 const buildStyles = () =>
-    gulp.src(paths.styles)
+    gulp.src(paths.style)
         .pipe(plumber())
         .pipe(maps.init())
         .pipe(glob())

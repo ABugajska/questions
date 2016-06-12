@@ -17,8 +17,20 @@ try {
   module = angular.module('templates', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('components/activities/view.html',
+    '<div class="activities"><div ng-repeat="activity in $ctrl.activities" class="activities__item center"><div class="avatar"><img ng-src="{{activity.user.avatar}}" /></div><p>{{activity.type}}</p></div></div>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('templates');
+} catch (e) {
+  module = angular.module('templates', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/list/view.html',
-    '<ul class="questions"><li ng-repeat="question in $ctrl.questions" class="questions__item"><question question="question"></question></li></ul>');
+    '<ul class="questions"><li ng-repeat="question in $ctrl.questions" class="questions-list-item"><question question="question"></question></li></ul>');
 }]);
 })();
 
@@ -30,7 +42,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/search/view.html',
-    '<input type="text" placeholder="search" />hello');
+    '<input type="text" placeholder="search questions" class="search__input" /><button type="submit">search</button>');
 }]);
 })();
 
@@ -42,7 +54,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/sort/view.html',
-    '<div class="sortowanie"><p>sortowanie</p><input type="radio" /></div>');
+    '<span class="italic">Sort by: &nbsp;</span><a href="#">recent</a><span class="italic">&nbsp;or&nbsp;</span><a href="#">all</a>');
 }]);
 })();
 
@@ -54,7 +66,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('pages/list/view.html',
-    '<h2>QUESTIONS</h2><search></search><sort></sort><list questions="ctrl.questions"></list>');
+    '<div class="questions-list-page"><div><h2 class="main-header text-inlineb">QUESTIONS</h2><div class="float-right"><sort class="sort"></sort></div></div><search class="search"></search><list questions="ctrl.questions"></list></div>');
 }]);
 })();
 
@@ -78,6 +90,6 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/list/question/view.html',
-    '<p>{{$ctrl.question.author.name}}&nbsp;<span>is asking:</span></p><h4 class="hello">{{$ctrl.question.title}}</h4>');
+    '<div class="questions__item"><div class="questions__item__header"><p>{{$ctrl.question.author.name}}&nbsp;<span>is asking:</span></p><h4>{{$ctrl.question.title}}</h4></div><activities activities="$ctrl.question.activities"></activities></div><div class="info"><p>related discussions {{$ctrl.question.related_discussions}}</p><p>peers involved {{$ctrl.question.peers_involved}}</p><p>conversations {{$ctrl.question.conversations}}</p></div>');
 }]);
 })();

@@ -1,0 +1,56 @@
+// pixels to rems
+
+$rem-base: 16px;
+@function remCalc($px, $base: $rem-base) {
+  @return $px / $base * 1rem;
+}
+
+// usefull classes
+.main-header {
+  margin: 0;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.text-inlineb {
+  display: inline-block;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+//basic colors
+$color-dark: #000000;
+$color-light: #ffffff;
+$text-lighter: #7f7f7f;
+
+
+
+
+// basic fonts
+$font-small: remCalc(10px);
+$font-normal: remCalc(14px);
+// custom mixins
+
+@mixin display($display) {
+  -webkit-display: $display;
+  -moz-inline-display: $display;
+  -ms-inline-display: $display;
+  -o-inline-display: $display;
+  display: $display;
+}

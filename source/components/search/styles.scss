@@ -1,3 +1,7 @@
-.sortowanie {
+.search {
+  @include display(inline-flex);
   background-color: pink;
+}
+.search__input {
+  border: 2px solid #b7b7b7;
 }

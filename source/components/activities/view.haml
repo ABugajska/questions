@@ -1,0 +1,5 @@
+.activities
+  .activities__item.center(ng-repeat="activity in $ctrl.activities")
+    .avatar
+      %img(ng-src="{{activity.user.avatar}}")
+    %p {{activity.type}}

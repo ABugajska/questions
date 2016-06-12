@@ -1,3 +1,11 @@
-%p {{$ctrl.question.author.name}}&nbsp; 
-  %span is asking:
-%h4.hello {{$ctrl.question.title}}
+.questions__item
+  .questions__item__header
+    %p {{$ctrl.question.author.name}}&nbsp;
+      %span is asking:
+    %h4 {{$ctrl.question.title}}
+  %activities(activities="$ctrl.question.activities")
+
+.info
+  %p related discussions {{$ctrl.question.related_discussions}}
+  %p peers involved {{$ctrl.question.peers_involved}}
+  %p conversations {{$ctrl.question.conversations}}

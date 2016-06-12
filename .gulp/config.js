@@ -12,7 +12,8 @@ module.exports = {
         app: 'source/**/*.js',
 
         // styles
-        styles: 'source/application.sass',
+        style: 'source/application.sass',
+        styles: 'source/**/*.scss',
 
         // dist
         build: 'dist',

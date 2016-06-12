@@ -2,3 +2,9 @@
   list-style: none;
   padding: 0;
 }
+
+.questions-list-item {
+  width: 100%;
+  border-bottom: 1px solid $color-dark;
+  padding-bottom: remCalc(30px);
+}

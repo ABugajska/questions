@@ -1,0 +1,27 @@
+.questions-list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.avatar {
+  overflow: hidden;
+  position: relative;
+  height: remCalc(45px);
+  width: remCalc(45px);
+  margin: 0 auto;
+  border-radius: 50%;
+  img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    min-width: 100%;
+  }
+}
