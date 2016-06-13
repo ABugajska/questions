@@ -1,7 +1,28 @@
 .search {
   @include display(inline-flex);
-  background-color: pink;
+
+  button {
+    width: 19%;
+    margin-left: 1%;
+    background-color: $color-light;
+    box-shadow: none;
+    text-transform: uppercase;
+    border: 2px solid $text-lighter;
+    height: remCalc(35px);
+  }
 }
 .search__input {
-  border: 2px solid #b7b7b7;
+  border: 2px solid $text-lighter;
+  width: 80%;
+  height: remCalc(35px);
+  background-color: #f4f4f4;
+  padding: remCalc(5px);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &:focus {
+    border: 2px solid $main-blue;
+  }
 }

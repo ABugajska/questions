@@ -18,7 +18,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/activities/view.html',
-    '<div class="activities"><div ng-repeat="activity in $ctrl.activities" class="activities__item center"><div class="avatar"><img ng-src="{{activity.user.avatar}}" /></div><p>{{activity.type}}</p></div></div>');
+    '<div class="activities__item__first"><p class="center">asked</p></div><div class="activities__items"><div ng-repeat="activity in $ctrl.activities" class="activities__item center"><div class="avatar"><img ng-src="{{activity.user.avatar}}" /></div><p class="center">{{activity.type}}</p></div></div>');
 }]);
 })();
 
@@ -66,7 +66,7 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('pages/list/view.html',
-    '<div class="questions-list-page"><div><h2 class="main-header text-inlineb">QUESTIONS</h2><div class="float-right"><sort class="sort"></sort></div></div><search class="search"></search><list questions="ctrl.questions"></list></div>');
+    '<div class="questions-list-page"><div class="questions-list-page-item-header"><h2 class="main-header text-inlineb">QUESTIONS</h2><div class="float-right"><sort class="sort"></sort></div></div><search class="search"></search><list questions="ctrl.questions"></list></div>');
 }]);
 })();
 
@@ -90,6 +90,6 @@ try {
 }
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('components/list/question/view.html',
-    '<div class="questions__item"><div class="questions__item__header"><p>{{$ctrl.question.author.name}}&nbsp;<span>is asking:</span></p><h4>{{$ctrl.question.title}}</h4></div><activities activities="$ctrl.question.activities"></activities></div><div class="info"><p>related discussions {{$ctrl.question.related_discussions}}</p><p>peers involved {{$ctrl.question.peers_involved}}</p><p>conversations {{$ctrl.question.conversations}}</p></div>');
+    '<div class="questions__item__header"><div class="questions__item__header__avatar"><div class="avatar"><img ng-src="{{$ctrl.question.author.avatar}}" /></div></div><div class="questions__item__header__title"><a ng-href="www.wp.pl">{{$ctrl.question.author.name}}&nbsp;</a><span>is asking:</span><h2>{{$ctrl.question.title}}</h2></div></div><activities activities="$ctrl.question.activities" class="activities"></activities><div class="info"><p><strong>{{$ctrl.question.related_discussions}}&nbsp;</strong>related discussions</p><p><strong>{{$ctrl.question.peers_involved}}&nbsp;</strong>peers involved</p><p><strong>{{$ctrl.question.conversations}}&nbsp;</strong>conversations</p></div>');
 }]);
 })();

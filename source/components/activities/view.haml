@@ -1,5 +1,7 @@
-.activities
+.activities__item__first
+  %p.center asked
+.activities__items
   .activities__item.center(ng-repeat="activity in $ctrl.activities")
     .avatar
       %img(ng-src="{{activity.user.avatar}}")
-    %p {{activity.type}}
+    %p.center {{activity.type}}

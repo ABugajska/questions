@@ -1,39 +1,59 @@
 .activities {
   @include display(inline-block);
   vertical-align: top;
+  width: 80%;
+  height: remCalc(230px);
 }
+.activities__items {
+  @include display(inline-block);
+  width: 85%;
+}
+.activities__item__first p, .activities__item p {
+  text-transform: uppercase;
+  color: $text-lighter;
+  font-size: $font-small;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  &:before, &:after {
+    content: "";
+    background-color: $text-lighter;
+    position: absolute;
+  }
+  &:before {
+    width: 80%;
+    height: remCalc(1px);
+    left: 10%;
+    top: remCalc(-8px);
+  }
+  &:after {
+    height: remCalc(10px);
+    width: remCalc(10px);
+    bottom: remCalc(-20px);
+    border-radius: 50%;
+    left: 50%;
+    margin-left: remCalc(-5px);
+    bottom: remCalc(-15px);
+  }
+}
+.activities__item__first {
+  @include display(inline-block);
+  width: 15%;
+  background-color: $main-blue;
+  vertical-align: top;
+  position: relative;
+  height: 100%;
 
+}
 .activities__item {
   @include display(inline-block);
   background-color: #f4f4f4;
-  margin-right: remCalc(10px);
+  margin-left: remCalc(10px);
+  margin-top: remCalc(30px);
   padding: remCalc(5px);
-  &:last-child {
-    margin-right: remCalc(0px);
-  }
-  p {
-    text-transform: uppercase;
-    color: $text-lighter;
-    font-size: $font-small;
-    position: relative;
-    &:before, &:after {
-      content: "";
-      background-color: $color-dark;
-      position: absolute;
-    }
-    &:before {
-      width: 100%;
-      height: remCalc(1px);
+  width: 17%;
+  height: 83%;
+  position: relative;
 
-      top: remCalc(-5px);
-    }
-    &:after {
-      height: remCalc(10px);
-      width: remCalc(10px);
-      bottom: remCalc(-20px);
-      border-radius: 50%;
-      left: 50%;
-      margin-left: remCalc(-5px);
-    }
-  }
 }

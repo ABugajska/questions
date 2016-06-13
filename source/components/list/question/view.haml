@@ -1,11 +1,21 @@
-.questions__item
-  .questions__item__header
-    %p {{$ctrl.question.author.name}}&nbsp;
-      %span is asking:
-    %h4 {{$ctrl.question.title}}
-  %activities(activities="$ctrl.question.activities")
+
+.questions__item__header
+  .questions__item__header__avatar
+    .avatar
+      %img(ng-src="{{$ctrl.question.author.avatar}}")
+  .questions__item__header__title
+    %a(ng-href="www.wp.pl") {{$ctrl.question.author.name}}&nbsp;
+    %span is asking:
+    %h2 {{$ctrl.question.title}}
+%activities.activities(activities="$ctrl.question.activities")
 
 .info
-  %p related discussions {{$ctrl.question.related_discussions}}
-  %p peers involved {{$ctrl.question.peers_involved}}
-  %p conversations {{$ctrl.question.conversations}}
+  %p
+    %strong {{$ctrl.question.related_discussions}}&nbsp;
+    related discussions
+  %p
+    %strong {{$ctrl.question.peers_involved}}&nbsp;
+    peers involved
+  %p
+    %strong {{$ctrl.question.conversations}}&nbsp;
+    conversations
