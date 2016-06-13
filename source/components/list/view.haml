@@ -1,3 +1,3 @@
 %ul.questions
-  %li.questions-list-item(ng-repeat="question in $ctrl.questions")
+  %li.questions-list-item(ng-repeat="question in $ctrl.questions | filter:searchQuestion")
     %question(question="question")

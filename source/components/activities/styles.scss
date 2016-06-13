@@ -6,11 +6,12 @@
 }
 .activities__items {
   @include display(inline-block);
-  width: 85%;
+  width: 70%;
 }
-.activities__item__first p, .activities__item p {
+.activities__item__first p,
+.activities__item p,
+.activities__item__second p {
   text-transform: uppercase;
-  color: $text-lighter;
   font-size: $font-small;
   position: absolute;
   bottom: 0;
@@ -18,7 +19,6 @@
   width: 100%;
   &:before, &:after {
     content: "";
-    background-color: $text-lighter;
     position: absolute;
   }
   &:before {
@@ -37,6 +37,26 @@
     bottom: remCalc(-15px);
   }
 }
+.activities__item__second {
+  @include display(inline-block);
+  width: 15%;
+  height: 100%;
+  vertical-align: top;
+  position: relative;
+  p {
+    text-transform: lowercase;
+    color: $color-dark;
+    &:before {
+      display: none;
+    }
+  }
+  span {
+    @include display(inline-block);
+    margin-top: remCalc(50px);
+    font-size: $font-bigger;
+  }
+}
+
 .activities__item__first {
   @include display(inline-block);
   width: 15%;
@@ -44,7 +64,9 @@
   vertical-align: top;
   position: relative;
   height: 100%;
-
+  p {
+    color: $text-lighter;
+  }
 }
 .activities__item {
   @include display(inline-block);
@@ -52,8 +74,21 @@
   margin-left: remCalc(10px);
   margin-top: remCalc(30px);
   padding: remCalc(5px);
-  width: 17%;
+  width: 20%;
   height: 83%;
   position: relative;
 
+}
+
+
+@media all and (max-width: 640px) {
+  .activities__item__first {
+    display: none;
+  }
+  .activities__items {
+    width: 85%;
+  }
+  .activities__item:first-child {
+    margin-left: remCalc(0px);
+  }
 }
