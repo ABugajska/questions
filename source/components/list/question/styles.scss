@@ -3,8 +3,10 @@
   width: 80%;
 }
 .questions__item__header {
+  @include display(flex);
   background-color: $main-blue;
   width: 80%;
+  align-items: center;
   h2 {
     margin: 0;
     margin-bottom: remCalc(20px);
@@ -21,7 +23,6 @@
   }
 }
 .questions__item__header__avatar {
-  @include display(inline-block);
   width: 15%;
   vertical-align: middle;
   .avatar {
@@ -32,6 +33,7 @@
   @include display(inline-block);
   vertical-align: middle;
   padding-top: remCalc(15px);
+  width: 85%;
 }
 .info {
   @include display(inline-block);

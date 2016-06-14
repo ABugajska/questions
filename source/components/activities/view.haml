@@ -1,13 +1,14 @@
-.activities__item__first.center
-  %p.center asked
-.activities__item__second.center(ng-if="$ctrl.activities.length>4")
-  %span {{$ctrl.activities.length - 4}}
-  %p.center
-    more
-    %br
-    activities
-.activities__items
-  .activities__item.center(ng-repeat="activity in $ctrl.activities | limitTo: '4'")
-    .avatar
-      %img(ng-src="{{activity.user.avatar}}")
-    %p.center(ng-class="{{activity.type}}") {{activity.type}}
+.activities__item-container
+  .activities__item__first.center
+    %p.center asked
+  .activities__item__second.center(ng-if="$ctrl.activities.length>4")
+    %span {{$ctrl.activities.length - 4}}
+    %p.center
+      more
+      %br
+      activities
+  .activities__items
+    .activities__item.center(ng-repeat="activity in $ctrl.activities | limitTo: '4'")
+      .avatar
+        %img(ng-src="{{activity.user.avatar}}")
+      %p.center(ng-class="{{activity.type}}") {{activity.type}}

@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('singleQuestion', ['templates', 'questions'])
+  angular.module('singleQuestion', ['templates', 'questions', 'list'])
     .controller('SingleQuestionCtrl', ['Questions', function(Questions){
       var ctrl = this;
       Questions.getAllQuestions().then(function(response){
