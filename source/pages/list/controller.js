@@ -7,5 +7,8 @@
         ctrl.questions = response.data;
         console.log(response.data);
       });
+      
+      ctrl.searchQuestion = "";
+
     }]);
 })();

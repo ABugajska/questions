@@ -4,7 +4,7 @@
     .component('search', {
       templateUrl: 'components/search/view.html',
       bindings: {
-        questions: '<'
+        search: '='
       }
     });
 })();

@@ -11,7 +11,6 @@
 .activities__container {
   @include display(flex);
   width: 100%;
-  justify-content: center;
   flex-direction: row;
 }
 .activities__item__asked p.commented,
@@ -99,6 +98,18 @@
 
 }
 
+@media all and (max-width: 992px) {
+  .activities {
+    width: 80%;
+  }
+  .activities__item__asked,
+  .activities__item__second {
+    width: 50%;
+  }
+  .activities__item {
+    width: 100%;
+  }
+}
 
 @media all and (max-width: 640px) {
   .activities__item__asked {
@@ -106,6 +117,10 @@
   }
   .activities__items {
     width: 100%;
+  }
+  .activities__item__asked,
+  .activities__item__second {
+    width: 50%;
   }
   .activities__item:first-child {
     margin-left: remCalc(0px);

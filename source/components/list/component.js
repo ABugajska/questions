@@ -4,7 +4,8 @@
     .component('list', {
       templateUrl: 'components/list/view.html',
       bindings: {
-        questions: '<'
+        questions: '<',
+        search: '<'
       },
       controller: function(){
         var ctrl = this;

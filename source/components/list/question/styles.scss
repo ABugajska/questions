@@ -59,4 +59,12 @@
   .questions__item__header {
     width: 100%;
   }
+  .info {
+    width: 35%;
+  }
+}
+@media all and (max-width: 640px) {
+  .info {
+    width: 50%;
+  }
 }
