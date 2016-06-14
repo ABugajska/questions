@@ -5,6 +5,14 @@
       templateUrl: 'components/list/view.html',
       bindings: {
         questions: '<'
+      },
+      controller: function(){
+        var ctrl = this;
+        ctrl.limit = 4;
+        ctrl.loadMore = function(){
+          ctrl.limit = ctrl.limit + 4;
+        };
+
       }
     });
 })();

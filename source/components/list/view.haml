@@ -1,3 +1,4 @@
 %ul.questions
-  %li.questions-list-item(ng-repeat="question in $ctrl.questions | filter:searchQuestion")
+  %li.questions-list-item(ng-repeat="question in $ctrl.questions | limitTo: $ctrl.limit ")
     %question(question="question")
+%button.load-more-btn(ng-click="$ctrl.loadMore()" ng-show="$ctrl.limit<$ctrl.questions.length") load more questions

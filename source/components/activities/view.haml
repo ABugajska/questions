@@ -1,5 +1,5 @@
 .activities__item-container
-  .activities__item__first.center
+  .activities__item__asked.center
     %p.center asked
   .activities__item__second.center(ng-if="$ctrl.activities.length>4")
     %span {{$ctrl.activities.length - 4}}
@@ -11,4 +11,4 @@
     .activities__item.center(ng-repeat="activity in $ctrl.activities | limitTo: '4'")
       .avatar
         %img(ng-src="{{activity.user.avatar}}")
-      %p.center(ng-class="{{activity.type}}") {{activity.type}}
+      %p.center(class="{{activity.type}}") {{activity.type}}

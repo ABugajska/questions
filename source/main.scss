@@ -26,3 +26,14 @@ a {
   color: $link-color;
   text-decoration: none;
 }
+
+.load-more-btn {
+  background-color: $color-light;
+  color: #e1173f;
+  border: none;
+  font-weight: 600;
+  font-size: $font-bigger;
+  &:hover {
+    cursor: pointer;
+  }
+}

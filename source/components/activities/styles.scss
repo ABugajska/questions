@@ -14,18 +14,27 @@
   justify-content: center;
   flex-direction: row;
 }
-.activities__item__first p,
+.activities__item__asked p.commented,
+.activities__item p.commented,
+.activities__item__second p.commented {
+  &:before, &:after {
+    background-color: $text-lighter;
+  }
+}
+.activities__item__asked p,
 .activities__item p,
 .activities__item__second p {
   text-transform: uppercase;
   font-size: $font-small;
   position: absolute;
+  color: $text-lighter;
   bottom: 0;
   left: 0;
   width: 100%;
   &:before, &:after {
     content: "";
     position: absolute;
+    background-color: $color-dark;
   }
   &:before {
     width: 80%;
@@ -61,24 +70,30 @@
   }
 }
 
-.activities__item__first {
-  @include display(inline-block);
+.activities__item__asked {
   width: 20%;
   background-color: $main-blue;
   vertical-align: top;
   position: relative;
   height: 100%;
+  max-width: remCalc(145px);
   p {
     color: $text-lighter;
   }
 }
+.activities__item__asked p:before {
+  background-color: $text-lighter;
+}
+.activities__item__asked p:after {
+  display: none;
+}
 .activities__item {
-  @include display(inline-block);
   background-color: #f4f4f4;
   margin-left: remCalc(10px);
   margin-top: remCalc(30px);
   padding: remCalc(5px);
   width: 25%;
+  max-width: remCalc(140px);
   height: 83%;
   position: relative;
 
@@ -86,7 +101,7 @@
 
 
 @media all and (max-width: 640px) {
-  .activities__item__first {
+  .activities__item__asked {
     display: none;
   }
   .activities__items {
