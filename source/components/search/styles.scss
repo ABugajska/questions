@@ -1,5 +1,5 @@
 .search {
-  @include display(inline-flex);
+  width: 100%;
 
   button {
     width: 19%;
@@ -10,6 +10,10 @@
     border: 2px solid $text-lighter;
     height: remCalc(35px);
   }
+}
+.search-container {
+  @include display(flex);
+  margin-top: remCalc(20px);
 }
 .search__input {
   border: 2px solid $text-lighter;

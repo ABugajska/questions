@@ -1,7 +1,9 @@
-.questions-list-page
-  .questions-list-page__item__header
+.questions-list-page-item-header
+  .questions-list-page-item-header-container
     %h2.main-header.text-inlineb QUESTIONS
     .float-right
       %sort.sort
-  %search.search(search="ctrl.searchQuestion")
+    .search-container
+      %search.search(search="ctrl.searchQuestion")
+.questions-list-page
   %list(questions="ctrl.questions" search="ctrl.searchQuestion")

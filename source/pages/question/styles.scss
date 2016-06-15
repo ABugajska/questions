@@ -9,6 +9,9 @@
     padding-bottom: remCalc(0px);
   }
 }
+.single-question .questions-list-page-item-header {
+  padding: remCalc(0px);
+}
 .questions-list-item-button {
   position: absolute;
   background-color: $color-light;

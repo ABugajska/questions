@@ -1,15 +1,15 @@
-%a(ng-href="/") back
-%h2.main-header.text-inlineb QUESTION
+.questions-list-page-item-header
+  .questions-list-page-item-header-container
+    %a.link-back(ng-href="/")
+    %h2.main-header.text-inlineb QUESTION
 .questions-list-page.single-question
-  .questions-list-page__item__header
+  .questions-list-page-item-header
 
     .float-right
     .questions
       .questions-list-item
         %question-header(question="ctrl.question")
         %question-content(question="ctrl.question")
-        %button.questions-list-item-button
-          %span Give&nbsp;
-          new answer
+
 
 hello
