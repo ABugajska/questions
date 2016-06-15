@@ -1,3 +1,6 @@
+body {
+  background-color: #fbfbfb;
+}
 .questions-list-page {
   @include display(flex);
   max-width: remCalc(1200px);

@@ -1,0 +1,7 @@
+.voting
+  %strong {{$ctrl.votes}}
+  %span(ng-if="$ctrl.votes>=0")&nbsp;upvotes
+  %span(ng-if="$ctrl.votes<0")&nbsp;downvotes
+  .voting__buttons
+    %button.votting__up(ng-click="$ctrl.upVotes()")
+    %button.voting__down(ng-click="$ctrl.downVotes()")

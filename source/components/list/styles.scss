@@ -1,10 +1,12 @@
 .questions {
   list-style: none;
   padding: 0;
+  box-shadow: 1px 0px 5px 0px $text-lighter;
 }
 
 .questions-list-item {
   width: 100%;
+  position: relative;
   border-bottom: 1px solid $text-lighter;
   padding-bottom: remCalc(30px);
 }
