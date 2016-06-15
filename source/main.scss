@@ -40,3 +40,9 @@ a {
     cursor: pointer;
   }
 }
+
+@media all and (max-width: 992px) {
+  body {
+    margin: remCalc(7px) remCalc(0px);
+  }
+}

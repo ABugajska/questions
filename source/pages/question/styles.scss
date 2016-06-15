@@ -25,15 +25,29 @@
 .question-container {
   @include display(flex);
   width: 100%;
-  height: remCalc(150px);
+  min-height: remCalc(150px);
 }
 
 .question__leftbox {
   background-color: $main-blue;
   width: 15%;
-  height: 100%;
 }
 .question__content {
   width: 60%;
   padding: remCalc(20px);
+  padding-right: remCalc(0px);
+}
+@media all and (max-width: 640px) {
+  .question__leftbox {
+    display: none;
+  }
+  .question-container {
+    display: block;
+    padding-bottom: remCalc(20px);
+  }
+  .question__content {
+    width: 100%;
+    padding: remCalc(10px);
+    display: table-cell;
+  }
 }

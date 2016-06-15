@@ -1,5 +1,5 @@
 .voting {
-  padding: remCalc(20px);
+  padding: remCalc(20px) remCalc(0px);
   button {
     border: none;
     display: block;
@@ -36,4 +36,14 @@
   display: inline-block;
   margin-left: remCalc(15px);
   vertical-align: middle;
+}
+
+@media all and (max-width: 992px) {
+
+}
+@media all and (max-width: 640px) {
+  .voting {
+    padding: remCalc(0px) remCalc(20px);
+    text-align: right;
+  }
 }
