@@ -1,6 +1,7 @@
 body {
   background-color: #fbfbfb;
   margin: 0;
+  padding-bottom: remCalc(50px);
 }
 .questions-list-page {
   @include display(flex);
@@ -12,6 +13,12 @@ body {
 .container {
   max-width: remCalc(1200px);
   margin: 0 auto;
+}
+.divider {
+  margin-top: remCalc(60px);
+  margin-bottom: remCalc(0px);
+  font-style: italic;
+  font-size: $font-bigger;
 }
 .link-back {
   border: 1px solid #b1b3b6;
