@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('singleQuestion', ['templates', 'questions', 'list', 'list.question.header', 'list.question.content', 'voting'])
+  angular.module('singleQuestion', ['templates', 'questions', 'list', 'list.question.header', 'list.question.content', 'voting', 'comments'])
     .controller('SingleQuestionCtrl', function(Questions, $stateParams){
       var ctrl = this;
       console.log($stateParams);

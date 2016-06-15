@@ -1,5 +1,5 @@
 .questions-list-page-item-header
-  .questions-list-page-item-header-container
+  .container
     %a.link-back(ng-href="/")
     %h2.main-header.text-inlineb QUESTION
 .questions-list-page.single-question
@@ -12,4 +12,4 @@
         %question-content(question="ctrl.question")
 
 
-hello
+%comments(question="ctrl.question" votes="$ctrl.question.points")

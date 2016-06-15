@@ -9,8 +9,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.questions-list-page-item-header-container {
-  max-width: 1200px;
+.container {
+  max-width: remCalc(1200px);
   margin: 0 auto;
 }
 .link-back {

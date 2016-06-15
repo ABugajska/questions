@@ -2,14 +2,14 @@
   list-style: none;
   padding: 0;
   margin-top: remCalc(0px);
-  box-shadow: 1px 0px 5px 0px $text-lighter;
+  box-shadow: 0px -3px 7px -1px #a7a9ac;
 }
 
 .questions-list-item {
   width: 100%;
   position: relative;
-  border-bottom: 1px solid $text-lighter;
   padding-bottom: remCalc(30px);
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .questions-list-page-item-header {
