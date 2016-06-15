@@ -38,6 +38,16 @@
   margin-left: remCalc(15px);
   vertical-align: middle;
 }
+@media all and (max-width: 992px) {
+  .initial__comment {
+    .voting-container {
+      width: 22%;
+    }
+  }
+  .voting-container {
+    width: 30%;
+  }
+}
 @media all and (max-width: 640px) {
   .voting {
     padding: remCalc(0px) remCalc(20px);

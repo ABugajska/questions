@@ -17,7 +17,7 @@
             %span commented it&nbsp;&#183;&nbsp;
             %small yesterday
           %p lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
-        %voting(votes="$ctrl.question.points")
+        %voting.voting-container(votes="$ctrl.question.points")
     .initial-comment-container
       .initial__comment
         .questions__item__header
@@ -33,7 +33,7 @@
               %span commented it&nbsp;&#183;&nbsp;
               %small yesterday
             %p lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
-          %voting(votes="$ctrl.question.points")
+          %voting.voting-container(votes="$ctrl.question.points")
         %button.questions-list-item-button
           %span Continue&nbsp;
           discussion
@@ -52,6 +52,6 @@
               %span commented it&nbsp;&#183;&nbsp;
               %small yesterday
             %p lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
-          %voting(votes="$ctrl.question.points")
+          %voting.voting-container(votes="$ctrl.question.points")
         %button.questions-list-item-button
           %span Comment
