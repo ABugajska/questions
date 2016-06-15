@@ -1,5 +1,4 @@
 .comment__container {
-  padding-bottom: remCalc(20px);
   margin-top: remCalc(30px);
   box-shadow: 0px -3px 7px -1px #a7a9ac;
   border-bottom: 1px solid #f4f4f4;
@@ -7,9 +6,12 @@
   .questions__item__header {
     background-color: $color-light;
     width: 100%;
+    align-items: stretch;
   }
   .questions__item__header__title {
     padding-left: remCalc(20px);
+    padding-bottom: remCalc(40px);
+    width: 60%;
   }
   .questions__item__header__avatar {
     position: relative;
@@ -37,8 +39,11 @@
     width: 85%;
     background-color: $color-light;
     border: 1px solid #f4f4f4;
-    padding-bottom: remCalc(20px);
+    padding-bottom: remCalc(40px);
     box-shadow: 1px 0px 7px -2px #a7a9ac;
+  }
+  .questions__item__header__title {
+    width: 60%;
   }
 }
 
@@ -57,6 +62,9 @@
   .comment__container .questions__item__header {
     display: block;
     width: 100%;
+    p {
+      padding: remCalc(0px) remCalc(10px);
+    }
   }
   .initial__comment .questions__item__header {
     width: 97%;
@@ -67,5 +75,6 @@
   }
   .initial__comment .questions__item__header__title {
     width: 100%;
+    padding: 0;
   }
 }

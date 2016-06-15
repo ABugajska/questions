@@ -2,12 +2,13 @@
   .questions__item__header {
     width: 100%;
   }
-  .questions__item__header__title {
-    padding-left: remCalc(20px);
-  }
+
   .questions-list-item {
     padding-bottom: remCalc(0px);
   }
+}
+.questions__item__header__title {
+  padding-left: remCalc(20px);
 }
 .single-question .questions-list-page-item-header {
   padding: remCalc(0px);
@@ -20,7 +21,8 @@
   font-size: $font-bigger;
   bottom: remCalc(-17px);
   left: 50%;
-  margin-left: remCalc(-95px);
+  width: remCalc(240px);
+  margin-left: remCalc(-120px);
   span {
     text-transform: uppercase;
   }

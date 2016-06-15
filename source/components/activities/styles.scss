@@ -63,7 +63,7 @@
     }
   }
   span {
-    @include display(inline-block);
+    display: inline-block;
     margin-top: remCalc(50px);
     font-size: $font-bigger;
   }
@@ -116,7 +116,7 @@
     display: none;
   }
   .activities__items {
-    width: 100%;
+    width: 50%;
   }
   .activities__item__asked,
   .activities__item__second {

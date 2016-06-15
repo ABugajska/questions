@@ -1,5 +1,5 @@
 .questions__item {
-  @include display(inline-block);
+  display: inline-block;
   width: 80%;
 }
 .questions__item__header {
@@ -30,13 +30,13 @@
   }
 }
 .questions__item__header__title {
-  @include display(inline-block);
+  display: inline-block;
   vertical-align: middle;
   padding-top: remCalc(15px);
   width: 85%;
 }
 .info {
-  @include display(inline-block);
+  display: inline-block;
   vertical-align: bottom;
   width: 20%;
   p {
@@ -48,11 +48,6 @@
     font-size: remCalc(20px);
   }
 }
-.questions__item__header__title {
-  width: 60%;
-}
-
-
 @media all and (max-width: 992px) {
   .questions__item__header {
     width: 100%;

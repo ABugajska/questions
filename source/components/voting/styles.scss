@@ -41,6 +41,7 @@
 @media all and (max-width: 640px) {
   .voting {
     padding: remCalc(0px) remCalc(20px);
+    padding-bottom: remCalc(20px);
     text-align: right;
   }
 }
