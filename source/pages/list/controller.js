@@ -8,6 +8,6 @@
         console.log(response.data);
       });
       ctrl.searchQuestion = "";
-
+      ctrl.sort = 'activities.length';
     }]);
 })();

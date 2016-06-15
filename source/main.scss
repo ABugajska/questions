@@ -4,6 +4,11 @@ body {
   padding: remCalc(0px) remCalc(5px);
   padding-bottom: remCalc(50px);
 }
+p {
+  word-break: break-all;
+  line-height: 1.4;
+}
+
 .questions-list-page {
   @include display(flex);
   max-width: remCalc(1200px);
@@ -80,5 +85,11 @@ a {
   font-size: $font-bigger;
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media all and (max-width: 640px) {
+  h2 {
+    font-size: 17px;
   }
 }

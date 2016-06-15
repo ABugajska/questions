@@ -5,7 +5,8 @@
       templateUrl: 'components/list/view.html',
       bindings: {
         questions: '<',
-        search: '<'
+        search: '<',
+        sort: '<'
       },
       controller: function(){
         var ctrl = this;
@@ -13,7 +14,6 @@
         ctrl.loadMore = function(){
           ctrl.limit = ctrl.limit + 4;
         };
-
       }
     });
 })();

@@ -2,8 +2,8 @@
   .container
     %h2.main-header.text-inlineb QUESTIONS
     .float-right
-      %sort.sort
+      %sort.sort(sort="ctrl.sort")
     .search-container
       %search.search(search="ctrl.searchQuestion")
 .questions-list-page
-  %list(questions="ctrl.questions" search="ctrl.searchQuestion")
+  %list(questions="ctrl.questions" search="ctrl.searchQuestion" sort="ctrl.sort")
