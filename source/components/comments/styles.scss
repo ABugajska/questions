@@ -1,7 +1,7 @@
 .comment__container {
   margin-top: remCalc(30px);
   box-shadow: 0px -3px 7px -1px #a7a9ac;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid $light-border;
   position: relative;
 
   .questions__item__header__title {
@@ -23,7 +23,7 @@
     align-items: center;
   }
   .questions__item__header__title {
-    border-left: 1px solid #f4f4f4;
+    border-left: 1px solid $light-border;
   }
 }
 .comment__header {
@@ -41,7 +41,7 @@
   .questions__item__header {
     width: 85%;
     background-color: $color-light;
-    border: 1px solid #f4f4f4;
+    border: 1px solid $light-border;
     box-shadow: 1px 0px 7px -2px #a7a9ac;
   }
   .questions__item__header__title {
@@ -49,12 +49,7 @@
     padding-bottom: remCalc(40px);
   }
 }
-.for-mobile {
-  display: none;
-}
-.for-screen {
-  display: inline-block;
-}
+
 @media all and (max-width: 992px) {
   .initial__comment .questions__item__header {
     width: 86%;
@@ -63,7 +58,7 @@
 @media all and (max-width: 640px) {
   .comment__header {
     padding: remCalc(10px);
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid $light-border;
   }
 
   .comment__container .questions__item__header__title {
@@ -88,12 +83,7 @@
     width: 100%;
     padding: 0;
   }
-  .for-screen {
-    display: none;
-  }
-  .for-mobile {
-    display: inline-block;
-  }
+  
   .comment__container .questions__item__header__avatar,
   .initial__comment .questions__item__header__avatar {
     &:before {
