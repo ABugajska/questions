@@ -1,7 +1,7 @@
 .modal.center
   .modal-container
     .modal-content
-      %button.modal__close(ng-click="ctrl.dismissModal()") &times;
+      %a.modal__close(ng-click="ctrl.dismissModal()") &times;
       .modal__user
         .avatar
           %img(ng-src="rose.jpg")
@@ -20,19 +20,23 @@
       %p that's where we have been these 5 months ago
       .modal__boxes
         .modal__boxes__item-box
-          .modal__boxes__item
-            %h2 46
-            %small peers
-          .modal__boxes__item
-            %h2 29
-            %small discussions
+          .modal__boxes__item.box-one
+            %span
+              %h2 46
+              %small peers
+          .modal__boxes__item.box-two
+            %span
+              %h2 29
+              %small discussions
         .modal__boxes__item-box
-          .modal__boxes__item
-            %h2 19
-            %small findings
-          .modal__boxes__item
-            %h2 10
-            %small questions
+          .modal__boxes__item.box-three
+            %span
+              %h2 19
+              %small findings
+          .modal__boxes__item.box-four
+            %span
+              %h2 10
+              %small questions
 
       %p who joined the platform that same period
       .modal__users

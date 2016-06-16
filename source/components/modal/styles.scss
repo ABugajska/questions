@@ -60,6 +60,33 @@
 .modal__boxes__item-box {
   display: inline-block;
 }
+
+.modal__boxes__item.box-one {
+  transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  span {
+      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  }
+}
+.modal__boxes__item.box-two {
+  transform: scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  span {
+      transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  }
+}
+
+.modal__boxes__item.box-three {
+  transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  span {
+      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  }
+}
+.modal__boxes__item.box-four {
+  transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  span {
+      transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  }
+}
+
 .modal__boxes__item {
   background-color: rgba(223, 243, 253, 0.8);
   width: remCalc(100px);
@@ -72,6 +99,12 @@
   }
   h2 {
     margin-bottom: remCalc(10px);
+  }
+  span {
+    position: absolute;
+    left: remCalc(0px);
+    right: remCalc(0px);
+
   }
 }
 .modal__users {
@@ -86,6 +119,7 @@
   width: remCalc(50px);
   height: remCalc(50px);
   padding: remCalc(25px);
+  margin: remCalc(0px) remCalc(5px);
 }
 .modal__footer {
   padding: remCalc(30px) remCalc(0px);
@@ -115,6 +149,10 @@
 }
 .modal__footer__activities__item {
   margin: remCalc(0px) remCalc(10px);
+  small {
+    font-style: italic;
+    font-weight: 400;
+  }
 }
 
 @media all and (max-width: 1200px) {
