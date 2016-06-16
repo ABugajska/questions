@@ -1,0 +1,76 @@
+.modal.center
+  .modal-container
+    .modal-content
+      %button.modal__close(ng-click="ctrl.dismissModal()") &times;
+      .modal__user
+        .avatar
+          %img(ng-src="rose.jpg")
+        %a {{ctrl.user.name}}
+      .modal__header
+        .modal__header__member
+          %p member for&nbsp;
+            %span 5 months
+        .modal__header__lastseen
+          %p last seen&nbsp;
+            %span Saturday afternoon
+        .modal__header__activity
+          %p activity level
+
+      %h1 How it all started
+      %p that's where we have been these 5 months ago
+      .modal__boxes
+        .modal__boxes__item-box
+          .modal__boxes__item
+            %h2 46
+            %small peers
+          .modal__boxes__item
+            %h2 29
+            %small discussions
+        .modal__boxes__item-box
+          .modal__boxes__item
+            %h2 19
+            %small findings
+          .modal__boxes__item
+            %h2 10
+            %small questions
+
+      %p who joined the platform that same period
+      .modal__users
+        .modal__users__item-box
+          .modal__users__item
+            .avatar
+              %img(ng-src="rose.jpg")
+          %h5 Agnieszka Bugajska
+        .modal__users__item-box
+          .modal__users__item
+            .avatar
+              %img(ng-src="rose.jpg")
+          %h5 Agnieszka Bugajska
+        .modal__users__item-box
+          .modal__users__item
+            .avatar
+              %img(ng-src="rose.jpg")
+          %h5 Agnieszka Bugajska
+      %p the hottest discussion these days
+
+    .modal__footer
+      .avatar
+        %img(ng-src="rose.jpg")
+      %h5 Agnieszka
+      %p found the guardian article
+      %a Vegan diet to stop diabetes progress
+      .modal__footer__activities
+        .modal__footer__activities-box
+          .modal__footer__activities__item
+            %h3 3&nbsp;
+              %small related discussion
+          .modal__footer__activities__item
+            %h3 3&nbsp;
+              %small related discussion
+        .modal__footer__activities-box
+          .modal__footer__activities__item
+            %h3 3&nbsp;
+              %small related discussion
+          .modal__footer__activities__item
+            %h3 3&nbsp;
+              %small related discussion

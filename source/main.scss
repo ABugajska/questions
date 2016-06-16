@@ -81,6 +81,9 @@ p {
 a {
   color: $link-color;
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .load-more-btn {
