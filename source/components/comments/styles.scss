@@ -1,6 +1,6 @@
 .comment__container {
   margin-top: remCalc(30px);
-  box-shadow: 0px -3px 7px -1px #a7a9ac;
+  box-shadow: 0px -3px 7px -1px $text-lighter;
   border-bottom: 1px solid $light-border;
   position: relative;
 
@@ -9,11 +9,6 @@
     padding-bottom: remCalc(40px);
     width: 60%;
   }
-
-}
-.voting-container {
-  width: 20%;
-  text-align: right;
 }
 .comment__container,
 .initial__comment {
@@ -42,7 +37,7 @@
     width: 85%;
     background-color: $color-light;
     border: 1px solid $light-border;
-    box-shadow: 1px 0px 7px -2px #a7a9ac;
+    box-shadow: 1px 0px 7px -2px $text-lighter;
   }
   .questions__item__header__title {
     width: 60%;
@@ -60,7 +55,6 @@
     padding: remCalc(10px);
     border-bottom: 1px solid $light-border;
   }
-
   .comment__container .questions__item__header__title {
     padding: remCalc(0px);
     width: 100%;
@@ -77,13 +71,12 @@
     display: block;
   }
   .initial__comment {
-    background-color: #a7a9ac;
+    background-color: $text-lighter;
   }
   .initial__comment .questions__item__header__title {
     width: 100%;
-    padding: 0;
+    padding: remCalc(0px);
   }
-  
   .comment__container .questions__item__header__avatar,
   .initial__comment .questions__item__header__avatar {
     &:before {

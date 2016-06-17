@@ -9,7 +9,7 @@
     font-style: italic;
   }
   p {
-    margin: 0;
+    margin: remCalc(0px);
   }
   span {
     text-transform: uppercase;

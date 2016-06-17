@@ -1,19 +1,19 @@
 .questions {
   list-style: none;
-  padding: 0;
+  padding: remCalc(0px);
   margin-top: remCalc(0px);
-  box-shadow: 0px -3px 7px -1px #a7a9ac;
+  box-shadow: 0px -3px 7px -1px $text-lighter;
 }
 
 .questions-list-item {
   width: 100%;
   position: relative;
   padding-bottom: remCalc(30px);
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid $light-border;
 }
 
 .questions-list-page-item-header {
   padding: remCalc(40px) remCalc(0px);
   background-color: $color-light;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid $light-border;
 }

@@ -1,9 +1,9 @@
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: remCalc(0px);
+  left: remCalc(0px);
+  right: remCalc(0px);
+  bottom: remCalc(0px);
   background-color: rgba(0, 0, 0, 0.8);
 }
 .modal-container {
@@ -21,7 +21,7 @@
   }
   p {
     text-transform: uppercase;
-    color: #7d90c0;
+    color: $text-lighter;
     font-size: $font-normal;
     span {
       color: $color-dark;
@@ -39,6 +39,9 @@
     margin-top: remCalc(20px);
   }
 }
+.modal__boxes {
+  margin: remCalc(40px);
+}
 .modal-content {
   padding: remCalc(20px) remCalc(40px);
 }
@@ -52,7 +55,7 @@
   @include display(flex);
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #7d90c0;
+  border-bottom: 1px solid $text-lighter;
   div {
     width: 33%;
   }
@@ -60,7 +63,6 @@
 .modal__boxes__item-box {
   display: inline-block;
 }
-
 .modal__boxes__item.box-one {
   transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
@@ -73,7 +75,6 @@
       transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
-
 .modal__boxes__item.box-three {
   transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
@@ -86,7 +87,6 @@
       transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
-
 .modal__boxes__item {
   background-color: rgba(223, 243, 253, 0.8);
   width: remCalc(100px);
@@ -104,7 +104,6 @@
     position: absolute;
     left: remCalc(0px);
     right: remCalc(0px);
-
   }
 }
 .modal__users {
@@ -112,7 +111,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .modal__users__item {
   display: inline-block;
   background: repeating-linear-gradient(45deg, $light-border, $light-border 2px, #cecece 2px,#cecece 4px);

@@ -16,7 +16,7 @@
 .questions-list-item-button {
   position: absolute;
   background-color: $color-light;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $light-border;
   padding: remCalc(5px) remCalc(15px);
   font-size: $font-bigger;
   bottom: remCalc(-17px);
@@ -33,27 +33,10 @@
   min-height: remCalc(150px);
 }
 
-.question__leftbox {
-  background-color: $main-blue;
-  width: 15%;
-}
-.question__content {
-  width: 60%;
-  line-height: 1.4;
-  padding: remCalc(20px);
-  padding-right: remCalc(0px);
-}
+
 @media all and (max-width: 640px) {
-  .question__leftbox {
-    display: none;
-  }
   .question-container {
     display: block;
     padding-bottom: remCalc(20px);
-  }
-  .question__content {
-    width: 100%;
-    padding: remCalc(10px);
-    display: table-cell;
   }
 }

@@ -1,6 +1,5 @@
 .search {
   width: 100%;
-
   button {
     width: 19%;
     margin-left: 1%;
@@ -21,11 +20,9 @@
   height: remCalc(35px);
   background-color: #f4f4f4;
   padding: remCalc(5px);
-
   &:focus {
     outline: none;
   }
-
   &:hover, &:focus {
     border: 2px solid $main-blue;
   }

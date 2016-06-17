@@ -1,7 +1,7 @@
 .activities__item-container
   .activities__item__asked.center
     %p.center asked
-  .activities__item__second.center(ng-if="$ctrl.activities.length>$ctrl.limitTo")
+  .activities__item__rest.center(ng-if="$ctrl.activities.length>$ctrl.limitTo")
     %span {{$ctrl.activities.length - $ctrl.limitTo}}
     %p.center
       more

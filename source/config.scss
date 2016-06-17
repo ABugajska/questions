@@ -1,5 +1,4 @@
 // pixels to rems
-
 $rem-base: 16px;
 @function remCalc($px, $base: $rem-base) {
   @return $px / $base * 1rem;
@@ -29,9 +28,6 @@ $rem-base: 16px;
   vertical-align: middle;
 }
 
-.italic {
-  font-style: italic;
-}
 
 //basic colors
 $color-dark: #000000;

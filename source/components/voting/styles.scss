@@ -19,6 +19,10 @@
     }
   }
 }
+.voting-container {
+  width: 20%;
+  text-align: right;
+}
 .votting__up {
   &:before {
     border-left: 10px solid transparent;
