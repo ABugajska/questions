@@ -66,25 +66,25 @@
 .modal__boxes__item.box-one {
   transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
-      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      transform: scale(1) rotate(-40deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
 .modal__boxes__item.box-two {
   transform: scale(1) rotate(-10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
-      transform: scale(1) rotate(10deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      transform: scale(1) rotate(10deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
 .modal__boxes__item.box-three {
   transform: scale(1) rotate(40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
-      transform: scale(1) rotate(-40deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      transform: scale(1) rotate(-40deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
 .modal__boxes__item.box-four {
   transform: scale(1) rotate(-20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
   span {
-      transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+      transform: scale(1) rotate(20deg) translateX(5px) translateY(0px) skewX(0deg) skewY(0deg);
   }
 }
 .modal__boxes__item {
@@ -113,7 +113,7 @@
 }
 .modal__users__item {
   display: inline-block;
-  background: repeating-linear-gradient(45deg, $light-border, $light-border 2px, #cecece 2px,#cecece 4px);
+  background: repeating-linear-gradient(45deg, $color-light, $color-light 2px, #dedede 2px,#dedede 4px);
   width: remCalc(50px);
   height: remCalc(50px);
   padding: remCalc(25px);
@@ -123,7 +123,7 @@
   padding: remCalc(30px) remCalc(0px);
   margin-top: remCalc(20px);
   position: relative;
-  background: repeating-linear-gradient(45deg, $light-border, $light-border 2px, #cecece 2px,#cecece 4px);
+  background: repeating-linear-gradient(45deg, $color-light, $color-light 2px, #dedede 2px,#dedede 4px);
   h5, p {
     display: inline-block;
   }
